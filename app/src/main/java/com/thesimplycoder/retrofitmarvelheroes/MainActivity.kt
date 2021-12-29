@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity() {
 
                 override fun onFailure(call: Call<ResponseData<List<Superhero>>>, t: Throwable) {
                     // if there is error while get data from network
+                    println("Second commit")
 
                     Log.e(TAG, "Error on loading data")
                     pbLoading.visibility = View.GONE
